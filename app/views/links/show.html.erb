@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<div>
+  <span>
+    original url:
+  </span>
+  <span>
+    <%= @link.original_url %>
+  </span>
+</div>
+<div>
+  <span>
+    short url:
+  </span>
+  <span>
+    <%= @link.short_url %>
+  </span>
+</div>
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>
